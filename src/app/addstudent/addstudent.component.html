@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="title">
+        Add New Student
+    </div>
+    <div class="inner-container">
+        <div class="holder">
+
+        
+        <form  [formGroup]="newStudentForm" (ngSubmit)="onSubmit()" novalidate>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Roll" type="text" id="roll" name="roll" formControlName="roll">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="First Name" type="text" id="first_name" name="first_name" formControlName="first_name">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Last Name" type="text" id="last_name" name="last_name" formControlName="last_name">
+            </mat-form-field>
+            
+            <button mat-raised-button color="primary" type="submit" >Submit</button>
+        </form>
+    </div>
+    </div>
+</div>

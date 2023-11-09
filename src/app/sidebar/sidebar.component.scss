@@ -1,0 +1,34 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+.container{
+  display: flex;
+  height: 100%;
+  width: 20vw;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+
+  .logo-container{
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 1.8em;
+  }
+  .nav-items{
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    margin-top: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    gap: 1em;
+    font-size: 1.2em;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+}

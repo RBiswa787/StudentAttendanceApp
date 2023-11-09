@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  width: 80vw;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+}
+.container .title {
+  display: flex;
+  width: 75vw;
+  height: 10%;
+  padding-left: 2%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5em;
+  margin-top: 2%;
+}
+.container .inner-container {
+  display: flex;
+  width: 70vw;
+  height: 80%;
+  border-radius: 2%;
+  background-color: white;
+}/*# sourceMappingURL=dashboard.component.css.map */

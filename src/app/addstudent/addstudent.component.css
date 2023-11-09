@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  width: 80vw;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+}
+.container .title {
+  display: flex;
+  width: 75vw;
+  height: 10%;
+  padding-left: 2%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5em;
+  margin-top: 2%;
+}
+.container .inner-container {
+  display: flex;
+  width: 70vw;
+  height: 80%;
+  border-radius: 2%;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+.container .inner-container .holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.container .inner-container .holder form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .inner-container .holder button {
+  display: flex;
+  align-self: center;
+}/*# sourceMappingURL=addstudent.component.css.map */

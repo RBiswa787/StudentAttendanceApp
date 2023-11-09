@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="title">
+        Mark Attendance
+    </div>
+    <div class="inner-container">
+        <div class="student-data-container">
+            <span class="roll">{{studentData.roll}}</span>
+            <span class="first_name">{{studentData.first_name}}</span>
+            <span class="last_name">{{studentData.last_name}}</span>
+         </div>
+         <div class="form-holder">
+
+         </div>
+        <div class="hold">
+    <form [formGroup]="newAttendanceForm"novalidate>
+    <mat-label>Choose a date</mat-label>
+  <div>
+  <input matInput [matDatepicker]="picker" formControlName="date">
+  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+  </div>
+          <mat-form-field>
+            <mat-label>Status</mat-label>
+            <select matNativeControl required formControlName="status">
+               
+              <option value="present">Present</option>
+              <option value="absent">Absent</option>
+            </select>
+          </mat-form-field>
+          
+    </form>
+    <button mat-raised-button color="accent" type="submit" (click)="onSubmit()">Submit</button>
+    </div>
+    </div>
+
+</div>
