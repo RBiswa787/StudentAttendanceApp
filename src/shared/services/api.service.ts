@@ -63,8 +63,7 @@ export class ApiService {
 
         if(existing_rolls.includes(payload['student_details']['roll'])){
           this.postResponse.next(2);
-          console.log(existing_rolls);
-          console.log(payload['student_details']['roll']);
+
         }
         else{
           try{
@@ -94,7 +93,7 @@ export class ApiService {
   postExistingStudent(payload : IData) : void{
     this.http.post(BASE_URL + "/data",payload).subscribe(
       data => {
-        console.log(data);
+       
       }
     );
   }
@@ -145,7 +144,7 @@ export class ApiService {
    * @returns Observable
    */
   deleteStudentById(id : string){
-    console.log(id);
+
     return this.http.delete(BASE_URL  + '/data/' + id);
   }
 
@@ -153,17 +152,17 @@ export class ApiService {
     let roll = student['roll'];
     this.idByRoll.subscribe(
       data => {
-        console.log(data);
+        
         this.getStudentDetailsById(data).subscribe(
           response => {
-            console.log(response);
+   
             response[0]['id'] = data;
             response[0]['student_details'] = student;
             //this.postExistingStudent(response[0]);
-            console.log("Putting");
+ 
             this.http.put(BASE_URL +  '/data/' + data,response[0]).subscribe(
               resp => {
-                console.log(resp);
+        
               }
             );
             
@@ -207,7 +206,7 @@ export class ApiService {
             //   });
             this.http.put(BASE_URL + "/data/" + id,data[0]).subscribe(
               resp => {
-                console.log(resp);
+   
                 this.toggle.next(!this.toggle);
               }
             )

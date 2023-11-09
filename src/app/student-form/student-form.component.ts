@@ -74,7 +74,7 @@ export class StudentFormComponent {
         if(data != "-1"){
           this.apiService.getStudentDetailsById(data).subscribe(
             response => {
-              console.log(response);
+              
             }
           );
         }
@@ -89,7 +89,7 @@ export class StudentFormComponent {
         if(data != "-1"){
           this.apiService.deleteStudentById(data).subscribe(
             response => {
-              console.log(response);
+             
             }
           )
         }

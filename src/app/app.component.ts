@@ -16,7 +16,7 @@ export class AppComponent {
   fetchAllStudents(){
     this.apiService.getAllStudents().subscribe(
       data => {
-        console.log(data);
+       
       }
     );
   }
