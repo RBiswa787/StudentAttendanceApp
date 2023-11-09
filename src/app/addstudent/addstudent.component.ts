@@ -25,6 +25,7 @@ ngOnInit(): void {
 onSubmit(){
   console.log(this.newStudentForm);
   this.apiService.postNewStudent({roll: this.newStudentForm.value['roll'],first_name: this.newStudentForm.value['first_name'],last_name: this.newStudentForm.value['last_name']});
+  alert("Successfully Added Student!");
 }
 
 }

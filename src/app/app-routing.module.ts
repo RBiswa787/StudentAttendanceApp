@@ -8,7 +8,7 @@ import { EditattendanceComponent } from './editattendance/editattendance.compone
 import { DetailComponent } from './detail/detail.component';
 
 const routes: Routes = [
-  {path : 'dashboard', component: DashboardComponent},
+  {path : '', component: DashboardComponent},
   {path : 'mark', component : MarkComponent},
   {path : 'addstudent', component : AddstudentComponent},
   {path : 'editstudent', component : EditstudentComponent},
